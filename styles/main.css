@@ -57,10 +57,6 @@ h1 {
   font-weight: bold;
 }
 
-.head-ul li a:hover {
-  background-color: #f5f5f5;
-}
-
 .slider {
   width: 100px;
   height: 40px;
