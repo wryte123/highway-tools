@@ -1,3 +1,5 @@
+/* 全体 */
+
 html,
 body {
   margin: 0;
@@ -21,6 +23,8 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* 头部 */
 
 h1 {
   text-align: center;
@@ -96,3 +100,5 @@ li:nth-child(5).current ~ .slider {
   width: 125px;
   left: 612px;
 }
+
+/* 主体 */

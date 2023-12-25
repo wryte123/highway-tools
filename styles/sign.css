@@ -1,0 +1,57 @@
+
+.sign {
+	width: 550px; /* 或适当的宽度 */
+	padding: 20px;
+	border-radius: 10px;
+	backdrop-filter: blur(10px);
+  }
+  
+  
+  form {
+	background: rgba(70, 52, 186, 0.334); /* 半透明白色背景 */
+	padding: 100px;
+	border-radius: 10px;
+	backdrop-filter: blur(10px); /* 高斯模糊效果 */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 5px;
+  }
+  
+  input {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+  }
+  
+  button {
+	width: 100%;
+	margin: 10px 0;
+	padding: 15px;
+	background-color: #5352ed;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .error-message {
+	color: red;
+	margin-top: 10px;
+  }
+
+  .register-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}
