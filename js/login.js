@@ -5,6 +5,10 @@ uname[0] = "admin";
 var upwd = new Array();
 upwd[0] = "admin";
 
+var isLoggedIn = getCookie("isLoggedIn");
+var flag = isLoggedIn === "true";
+var sliderElement = document.querySelector(".head-ul li:nth-child(5) .slider");
+
 function validateForm() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
@@ -24,15 +28,33 @@ function validateForm() {
     return;
   }
 
-
   // 验证用户名和密码
-  var flag = false;
+
   for (var i = 0; i < uname.length; i++) {
     if (username === uname[i] && password === upwd[i]) {
       flag = true;
       break;
+    } else {
+      document.getElementById("usernameError").innerHTML =
+        "Username or password is incorrect";
+      document.getElementById("username").focus();
     }
   }
-  // 跳转至主页
-  window.location.href = "index.html";
+
+  if (flag) {
+    sliderElement.style.backgroundColor = "red";
+    setCookie("isLoggedIn", true, 10);
+    window.location.href = "index.html";
+  }
+}
+
+function getCookie(name) {
+  var cookies = document.cookie.split("; ");
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].trim();
+    if (cookie.indexOf(name + "=") === 0) {
+      return cookie.substring((name + "=").length, cookie.length);
+    }
+  }
+  return "";
 }

@@ -92,13 +92,14 @@ li:nth-child(3).current ~ .slider {
 
 ul li:nth-child(4):hover ~ .slider,
 li:nth-child(4).current ~ .slider {
-  left: 474px;
+  left: 462px;
+  width: 125px;
 }
 
 ul li:nth-child(5):hover ~ .slider,
 li:nth-child(5).current ~ .slider {
-  width: 125px;
-  left: 612px;
+  /* background-color: red; */
+  left: 626px;
 }
 
-/* 主体 */
+
