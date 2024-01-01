@@ -26,12 +26,6 @@ body {
 }
 
 /* 头部 */
-
-header {
-
-
-}
-
 h1 {
   text-align: center;
   margin-bottom: 20px;
@@ -50,7 +44,7 @@ h1 {
 }
 
 .head-ul {
-  margin-left: -40px; /* Adjust the value as needed */
+  margin-left: -60px; /* Adjust the value as needed */
   padding: 0;
   position: relative;
   display: flex;
@@ -175,6 +169,22 @@ li:nth-child(5).current ~ .slider {
       0% 100%
     );
   }
+}
+
+.nav-list{
+  display: none;
+}
+
+.head-nav .head-ul li:hover .nav-list{
+  display: block;
+  position: absolute;
+  top: 40px;
+  background-color: #5352ed;
+  width: 150px;
+  height: 200px;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 0 10px #5352ed;
 }
 
 /* 主体 */

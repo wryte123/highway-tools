@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Highway-tools</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/sign.css" />
   </head>
   <body>
     <div class="container">
@@ -22,12 +23,17 @@
         </nav>
       </header>
       <main>
-        <form>
-          <label for="username">输入用户名：</label>
-          <input type="text" name="username" id="username" />
-          <label for="password">输入密码：</label>
-          <input type="password" name="password" id="password" />
-        </form>
+        <div class="sign">
+          <form>
+            <label for="username">输入用户名：</label>
+            <input type="text" name="username" id="username" />
+            <label for="password">输入密码：</label>
+            <input type="password" name="password" id="password" />
+            <label for="password">确认密码：</label>
+            <input type="password" name="password" id="password-co" />
+            <button type="">注册账号</button>
+          </form>
+        </div>
       </main>
       <footer></footer>
     </div>
