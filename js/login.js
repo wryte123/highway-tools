@@ -42,7 +42,6 @@ function validateForm() {
   }
 
   if (flag) {
-    sliderElement.style.backgroundColor = "red";
     setCookie("isLoggedIn", true, 10);
     window.location.href = "index.html";
   }
@@ -57,4 +56,18 @@ function getCookie(name) {
     }
   }
   return "";
+}
+
+function setCookie(name, value, days) {
+  var expirationDate = new Date();
+  expirationDate.setDate(expirationDate.getDate() + days);
+  var cookieString =
+    name +
+    "=" +
+    value +
+    "; expires=" +
+    expirationDate.toUTCString() +
+    "; path=/";
+
+    document.cookie = cookieString;
 }

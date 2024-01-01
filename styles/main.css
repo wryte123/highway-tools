@@ -8,7 +8,8 @@ body {
 }
 
 body {
-  background: linear-gradient(#1e272e 70%, #5352ed 100%);
+  background: linear-gradient(#1e272ebf 70%, #5252ede3 100%),
+    url(../img/galaxy.jpg) center/cover;
   height: 100vh;
 }
 
@@ -26,20 +27,36 @@ body {
 
 /* 头部 */
 
+header {
+
+
+}
+
 h1 {
   text-align: center;
   margin-bottom: 20px;
   color: aliceblue;
 }
 
+
 .head-nav {
+
+
+/* Rest of the code remains the same */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 120px;
 }
 
-.head-ul,
+.head-ul {
+  margin-left: -40px; /* Adjust the value as needed */
+  padding: 0;
+  position: relative;
+  display: flex;
+}
+
+
 .head-li {
   margin: 0;
   padding: 0;
@@ -73,6 +90,7 @@ h1 {
   bottom: 0;
   z-index: -1;
   transition: all ease 0.4s;
+  animation: 2s ease-in-out waves infinite;
 }
 
 ul li:nth-child(1):hover ~ .slider,
@@ -102,4 +120,61 @@ li:nth-child(5).current ~ .slider {
   left: 626px;
 }
 
+@keyframes waves {
+  from {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 4%,
+      6% 9%,
+      13% 13%,
+      23% 15%,
+      31% 16%,
+      42% 15%,
+      49% 13%,
+      61% 10%,
+      71% 5%,
+      81% 3%,
+      90% 2%,
+      100% 5%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  to {
+    clip-path: polygon(
+      0% 17%,
+      9% 10%,
+      18% 4%,
+      30% 0%,
+      43% 1%,
+      49% 4%,
+      57% 7%,
+      66% 10%,
+      78% 11%,
+      89% 11%,
+      96% 9%,
+      100% 7%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
 
+/* 主体 */

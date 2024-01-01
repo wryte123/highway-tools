@@ -2,13 +2,14 @@
 .sign {
 	width: 550px; /* 或适当的宽度 */
 	padding: 20px;
+	background: rgba(70, 52, 186, 0.134);
 	border-radius: 10px;
 	backdrop-filter: blur(10px);
   }
   
   
   form {
-	background: rgba(70, 52, 186, 0.334); /* 半透明白色背景 */
+	background: rgba(70, 52, 186, 0.334); /* 半透明紫色背景 */
 	padding: 100px;
 	border-radius: 10px;
 	backdrop-filter: blur(10px); /* 高斯模糊效果 */
