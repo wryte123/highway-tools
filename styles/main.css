@@ -178,7 +178,9 @@ li:nth-child(5).current ~ .slider {
 .head-nav .head-ul li:hover .nav-list{
   display: block;
   position: absolute;
+  align-content: center;
   top: 40px;
+  /* left: 0; */
   background-color: #5352ed;
   width: 150px;
   height: 200px;
