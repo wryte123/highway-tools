@@ -26,16 +26,20 @@
         <div class="sign">
           <form>
             <label for="username">输入用户名：</label>
-            <input type="text" name="username" id="username" />
+            <input type="text" name="username" id="reg-username" />
             <label for="password">输入密码：</label>
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="reg-password" />
             <label for="password">确认密码：</label>
             <input type="password" name="password" id="password-co" />
-            <button type="">注册账号</button>
+            <button type="button" onclick="registerVali()">注册账号</button>
+            <a href="login.html" class="register-link">返回登录</a>
+            <div id="reg-usernameError" class="error-message"></div>
+            <div id="reg-passwordError" class="error-message"></div>
           </form>
         </div>
       </main>
       <footer></footer>
     </div>
+    <script src="js/login.js"></script>
   </body>
 </html>

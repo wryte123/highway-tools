@@ -2,6 +2,7 @@
 .sign {
 	width: 550px; /* 或适当的宽度 */
 	padding: 20px;
+	/* margin: 0 auto; */
 	background: rgba(70, 52, 186, 0.134);
 	border-radius: 10px;
 	backdrop-filter: blur(10px);
