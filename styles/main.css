@@ -10,7 +10,7 @@ body {
 body {
   background: linear-gradient(#1e272ebf 70%, #5252ede3 100%),
     url(../img/galaxy.jpg) center/cover;
-  height: auto;
+  height: 120vh;
 }
 
 * {
@@ -32,11 +32,8 @@ h1 {
   color: aliceblue;
 }
 
-
 .head-nav {
-
-
-/* Rest of the code remains the same */
+  /* Rest of the code remains the same */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +46,6 @@ h1 {
   position: relative;
   display: flex;
 }
-
 
 .head-li {
   margin: 0;
@@ -171,14 +167,14 @@ li:nth-child(5).current ~ .slider {
   }
 }
 
-.nav-list{
+.nav-list {
   display: none;
   list-style: none;
   align-content: center;
   padding: 0;
 }
 
-.head-nav .head-ul li:hover .nav-list{
+.head-nav .head-ul li:hover .nav-list {
   display: block;
   position: absolute;
 
@@ -201,6 +197,10 @@ li:nth-child(5).current ~ .slider {
 
 /* 主体 */
 
+main {
+  padding: auto;
+}
+
 .maintitle {
   text-align: center;
   margin-bottom: 20px;
@@ -212,4 +212,3 @@ main h2 {
   text-align: center;
   margin-bottom: 20px;
 }
-

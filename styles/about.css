@@ -1,4 +1,19 @@
-.avatar{
-	width: auto;
-	height: auto;
+.grid-container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6.4rem;
+  row-gap: 6.4rem;
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.text1 {
+  font-size: 20px;
+  font-weight: bold;
+  float: left;
 }
