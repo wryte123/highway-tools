@@ -1,0 +1,36 @@
+.content {
+  padding-top: 60px;
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.con {
+  display: flex;
+  width: 650px;
+  height: 200px;
+  background: rgba(208, 220, 230, 0.2);
+  backdrop-filter: blur(0.2);
+  float: left;
+  clear: left;
+  margin-top: 30px;
+  backdrop-filter: blur(30px);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(103, 122, 138, 0.8);
+}
+.c1 {
+  animation: c1load 0.5s linear;
+}
+.c2 {
+  animation: c2load 1s linear;
+}
+.c3 {
+  animation: c3load 1.5s linear;
+}
+
+.con .txt {
+  width: 400px;
+  padding: 0 40px;
+  font-family: "幼圆";
+}
