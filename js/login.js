@@ -117,6 +117,7 @@ function registerVali() {
       uname.push(username);
       upwd.push(password);
       flag = true;
+      setCookie("isLoggedIn", true, 10);
       window.location.href = "index.html";
     }
   }
