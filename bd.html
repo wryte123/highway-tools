@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Highway-tools</title>
+    <link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/convert.css"
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="head-nav">
+          <ul class="head-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="toolbox.html">Toolbox</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li class="loginItem">
+              <a href="login.html" class="loginLink">Login</a>
+            </li>
+            <div class="slider"></div>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="converter">
+          <h2>进制转换器</h2>
+          <label for="decimalInput">请输入数字</label>
+          <input type="number" id="decimalInput" />
+          <button onclick="convertDecimalToBinary()">计算</button>
+          <p id="binaryOutput"></p>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+    <script src="js/computed.js" defer></script>
+  </body>
+</html>
